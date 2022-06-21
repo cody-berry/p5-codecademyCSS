@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="lib/p5.js"></script>
+    <!-- uncomment lines below to include extra p5 libraries -->
+    <!---->
+    <!-- script src="p5.sound.js"></script> -->
+    <script type="text/javascript" src="sketch.js"></script>
+    <!-- this line removes any default padding and style. you might only need one of these values set. -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Let's experiment with CSS and HTML!</title>
+</head>
+
+<div id="canvasContainer">
+    <div id="canvas"></div>
+    <div id="ins"></div>
+</div>
+
+<body>
+    <div>
+        <a href="https://www.codecademy.com/learn/learn-css">Link to Learn CSS</a>
+        <a href="https://www.codecademy.com/learn/learn-html">Link to Learn HTML</a>
+
+        <!-- oh and inputs are only supposed to render in forms-->
+        <form>
+            <!-- Is this what Javascript creates when you say createSlider? Or something like that, depending on
+            the arguments for min, max, and step? -->
+            <input type="range" id="slider" min="0" max="5" step="1" name="slider">
+
+            <!-- And how do you create these in Javascript? -->
+            <input type="text" id="textbox" minlength="1" maxlength="10">
+
+            <!-- And these (probably subclasses of text)? -->
+            <input type="number" id="number" min="0" max="10">
+
+        </form>
+    </div>
+</body>
+</html>
